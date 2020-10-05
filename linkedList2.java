@@ -3,7 +3,7 @@ public class linkedList2 {
 
     public static void main(String args []){
 
-        System.out.println("\n Create a manual linked list");
+        System.out.println("\nCreate a manual linked list");
         System.out.println("Traverse through the linked list");
         System.out.println("Insert at the head, in the middle and at the end");
         System.out.println("Display insertion results");
@@ -31,9 +31,20 @@ public class linkedList2 {
         //insert a 5 at head
         theLinkedList.insertAtHead(5);
 
-        System.out.println("\n After insertion at head");
+        System.out.println("\nAfter insertion at head");
         theLinkedList.printList();
 
+        //insert 25 at fourth position
+        theLinkedList.insertInMiddle(fourth, 25);
+
+        System.out.println("\nAfter insertion in middle");
+        theLinkedList.printList();
+
+        //insert 100 at the end
+        theLinkedList.insertAtEnd(100);
+
+        System.out.println("\nAfter insertion at end");
+        theLinkedList.printList();
     }    
     
 }//end of class with main

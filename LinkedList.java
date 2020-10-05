@@ -14,14 +14,12 @@ public class LinkedList{
 
     public void printList(){
         Node n = head;
-        System.out.println("First Linked list address : " + head.nextNode);
         while(n!= null){
-            System.out.println("Data in linked list : " + n.nodeData);
-            System.out.println("Next Linked list address : " + n.nextNode);
+            System.out.print( n.nodeData + "  ");
             n = n.nextNode;
         }
         
-        System.out.println("Linked list traversal successful");
+        System.out.println("\nLinked list traversal successful");
     }
 
     
@@ -32,6 +30,24 @@ public class LinkedList{
         this.head = newNode;
 }
 
+    public void insertInMiddle(Node prevNode , int data){
+
+        Node newNode = new Node(data);
+        newNode.nextNode = prevNode.nextNode;
+        prevNode.nextNode = newNode;
+
+    }
+
+    public void insertAtEnd(int data){
+
+        Node newNode = new Node(data);
+        Node n = this.head;
+        while(n.nextNode!= null){
+            n = n.nextNode;
+        }
+        n.nextNode = newNode;
+
+    }
 
 }
 
