@@ -1,4 +1,4 @@
-class linkedList1 {
+public class linkedList1 {
 
     public static void main(String mickey []){
 
