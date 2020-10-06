@@ -182,6 +182,34 @@ public class LinkedList{
         }
         return searchValueRec(temp.next, value);
     }
+
+    public int FindNthNodeItr(int n){
+        Node temp = head;
+
+        while(temp != null && n>0){
+            temp = temp.next;
+            n--;
+        }
+
+        if (temp == null){
+            System.out.println("Data does not exist in list");
+            return 0;
+        }
+        return temp.data;
+    }
+
+    public int FindNthNodeRec(Node node, int n){
+        Node temp = node;
+        int count = 0;
+        if (temp == null){
+            return -1;
+        }
+        if (n==count){
+            return temp.data;
+        }
+
+        return FindNthNodeRec(temp.next, n-1);
+    }   
 }//end of class
 
 

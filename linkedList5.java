@@ -2,6 +2,9 @@ import java.util.Scanner;
 
 public class linkedList5 {
     public static void main(String ar []){
+
+        System.out.println("\nSearch an element if it exists in a linked list");
+
         LinkedList llObject = new LinkedList();
 
         //create nodes
