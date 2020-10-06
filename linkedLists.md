@@ -1,7 +1,9 @@
-LinkedList 1 : Create and traverse through a linked list
+linkedList1.java : Create and traverse through a linked list
 
-LinkedList 2 : Insertion at the head, in the middle and at the end
+linkedList2.java : Insertion at the head, in the middle and at the end
 
-LinkedList 3 : All linked list deletions
+linkedList3.java : All linked list deletions
 
-LinkedList 4 : Length of linked list (Iteratively and Recursively)
+linkedList4.java : Length of linked list (Iteratively and Recursively)
+
+linkedList5.java : Search an element in a linked list(Iterative and Recursive)

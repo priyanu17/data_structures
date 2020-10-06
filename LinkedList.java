@@ -154,6 +154,34 @@ public class LinkedList{
 
         return (1 + (findLengthRecursive(temp.next)));
     }
+
+    public boolean searchValueItr(int value){
+        Node temp = head;
+
+        while(temp!= null){
+            if (temp.data == value){
+                System.out.println("\nValue exists in list");
+                return true;
+            }
+            temp = temp.next;
+        }
+        System.out.println("\nValue does not exist in list");
+        return false;
+    }
+
+    public boolean searchValueRec(Node n , int value){
+        Node temp = n;
+        if (temp == null){
+            System.out.println("\nValue does not exist in list");
+            return false;
+        }
+
+        if (temp.data == value){
+            System.out.println("\nValue exists in list");
+            return true;
+        }
+        return searchValueRec(temp.next, value);
+    }
 }//end of class
 
 
