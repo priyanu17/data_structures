@@ -17,7 +17,7 @@ public class LinkedList{
 
         Node temp = head;
 
-        while(temp.next != null){
+        while(temp != null){
             System.out.print(temp.data + "  ");
             temp = temp.next;
         }
@@ -26,17 +26,14 @@ public class LinkedList{
 
     }
 
-    public static LinkedList insertAtHead(LinkedList llOb , int val){
-        LinkedList tempList = llOb;
+    public void insertAtHead( int val){
         Node tempNode = new Node(val);
-        if (tempList.head == null){
-            tempList.head = tempNode;
-            return tempList;
+        if (head == null){
+            head = tempNode;
         }
-        tempNode.next = tempList.head.next;
-        tempList.head = tempNode;
+        tempNode.next = head;
+        head = tempNode;
 
-        return tempList;
     }
 
     public void insertInMiddle(Node prevNode, int val){

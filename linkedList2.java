@@ -27,7 +27,7 @@ public class linkedList2 {
         llObject.printList();
 
         //insert at head
-        llObject = LinkedList.insertAtHead(llObject, 5);
+        llObject.insertAtHead( 5);
 
         System.out.println("\nAfter insertion at head");
         llObject.printList();
