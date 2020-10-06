@@ -82,6 +82,55 @@ public class LinkedList{
         prev.next = null;
     }
 
+    public void deleteKey(int key){
+
+        Node temp = head;
+        Node prev = null;
+        if (head.data == key){
+            head = head.next;
+            return;
+        }
+
+        while(temp!= null && temp.data != key){
+            prev = temp;
+            temp = temp.next;
+        }
+        if (temp == null)return;
+        prev.next = temp.next;
+    }
+
+    public void deleteFromPosition(int position){
+        if (head == null){
+            System.out.println("List is empty");
+            return;
+        }
+        else if (position <0 ){
+            System.out.println("Enter valid position");
+            return;
+        }
+        else if (position == 0 && head!= null){
+            head = head.next;
+        }
+
+        else{
+            Node temp = head;
+            int i = 0;
+            while(temp.next != null && i<position-1){
+                temp = temp.next;
+                i++;
+            }
+
+            if (temp.next == null){
+                System.out.println("\nPosition value is large");
+                return;
+            }
+            temp.next = temp.next.next;
+            System.out.println("\nValid position deleted");
+        }
+        
+
+
+    }
 
 }//end of class
 

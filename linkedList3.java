@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class linkedList3 {
     public static void main(String ar []){
 
@@ -46,6 +48,31 @@ public class linkedList3 {
         llObject.deleteFromEnd();
 
         System.out.println("\nAfter deletion from end");
+        llObject.printList();
+
+        //insert element to delete later
+        System.out.println("\nInsert a key to delete");
+        Scanner scan = new Scanner(System.in);
+        int key = scan.nextInt();
+
+        llObject.insertInMiddle(n6, key);
+
+        System.out.println("\nList after key is inserted");
+        llObject.printList();
+
+        //delete key
+        llObject.deleteKey(key);
+
+        System.out.println("\nList after key is deleted");
+        llObject.printList();
+
+        System.out.println("\nEnter position to delete");
+        int position = scan.nextInt();
+        scan.close();
+
+        llObject.deleteFromPosition(position);
+
+        System.out.println("\nAfter deleting given position");
         llObject.printList();
 
     }
