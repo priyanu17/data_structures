@@ -1,34 +1,44 @@
+public class linkedList1 {
+    
 
-class linkedList1 {
+    public static void main(String ar []){
 
-    public static void main(String mickey []){
 
-        System.out.println("\nCreating a manual linked list with five nodes");
-        System.out.println("Print all elements of the manual linked list\n");
+        System.out.println("\nCreate a manual linked list in java");
+        System.out.println("Traverse through the linked list\n");
 
-        //initialize the linkedList
-        LinkedList theLinkedList = new LinkedList();
+        //linked list object
+        LinkedList llObject = new LinkedList();
 
-        //create the nodes
+        //create node objects
         LinkedList.Node first = new LinkedList.Node(11);
         LinkedList.Node second = new LinkedList.Node(22);
         LinkedList.Node third = new LinkedList.Node(33);
         LinkedList.Node fourth = new LinkedList.Node(44);
         LinkedList.Node fifth = new LinkedList.Node(55);
+        LinkedList.Node sixth = new LinkedList.Node(66);
 
-        //link nodes
-        theLinkedList.head = first;
-        
-        first.nextNode = second;
-        second.nextNode = third;
-        third.nextNode = fourth;
-        fourth.nextNode = fifth;
+        //link all nodes
+        llObject.head = first;
+        first.next = second;
+        second.next = third;
+        third.next = fourth;
+        fourth.next = fifth;
+        fifth.next = sixth;
 
-        //print the contents of linked list
 
-        theLinkedList.printList();
+        llObject.printList();
+
+
+
+
+
 
     }
-}
 
- 
+
+
+
+
+
+}
