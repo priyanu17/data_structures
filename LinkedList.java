@@ -63,6 +63,25 @@ public class LinkedList{
 
     }
 
+    public void deleteFromHead(){
+        if (head!= null){
+            head = head.next;
+        }
+    }
+    public void deleteAfterNode(Node prev){
+        if(prev!= null)
+        prev.next = prev.next.next;
+    }
+    public void deleteFromEnd(){
+        Node temp = head;
+        Node prev = null;
+        while(temp.next!= null){
+            prev = temp;
+            temp = temp.next;
+        }
+        prev.next = null;
+    }
+
 
 }//end of class
 
