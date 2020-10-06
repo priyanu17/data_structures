@@ -1,3 +1,4 @@
+
 public class linkedList2 {
     public static void main(String ar []){
         System.out.println("\nCreate a manual linked list in java");

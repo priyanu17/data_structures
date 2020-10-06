@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 public class linkedList6 {
@@ -16,6 +17,7 @@ public class linkedList6 {
         LinkedList.Node n7 = new LinkedList.Node(77);
         LinkedList.Node n8 = new LinkedList.Node(88);
 
+        
         //link nodes
         llObject.head = n1;
         n1.next = n2;
