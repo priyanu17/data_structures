@@ -75,6 +75,11 @@ public class linkedList3 {
         System.out.println("\nAfter deleting given position");
         llObject.printList();
 
+        //delete the entire list
+        llObject.deleteList();
+
+        System.out.println("\nList is deleted now");
+
     }
 }
 

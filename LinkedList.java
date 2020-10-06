@@ -15,6 +15,9 @@ public class LinkedList{
 
     public void printList(){
 
+        if (head == null){
+            System.out.println("List is empty");
+        }
         Node temp = head;
 
         while(temp != null){
@@ -127,21 +130,31 @@ public class LinkedList{
             temp.next = temp.next.next;
             System.out.println("\nValid position deleted");
         }
-        
-
-
     }
 
+    public void deleteList(){
+        head = null;
+    }
+
+    public static int findLengthIterative(LinkedList ll){
+        int count = 0;
+        Node temp = ll.head;
+
+        while(temp!= null){
+            count++;
+            temp = temp.next;
+        }
+        return count;
+    }
+
+    public int findLengthRecursive(Node temp){
+        if (temp == null){
+            return 0;
+        }
+
+        return (1 + (findLengthRecursive(temp.next)));
+    }
 }//end of class
-
-
-
-
-
-
-
-
-
 
 
 
