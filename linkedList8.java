@@ -45,6 +45,8 @@ public class linkedList8 {
         System.out.println("\nNow the list has even no of nodes");
         //list with even number of nodes
         llObject.insertAtEnd(100);
+        llObject.insertAtEnd(110);
+        llObject.insertAtEnd(120);
         llObject.printList();
 
         middleNode = middleNode(llObject);

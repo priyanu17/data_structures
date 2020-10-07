@@ -14,3 +14,4 @@ linkedList7.java : Double Pointers in linked lists
 
 linkedList8.java : Double Pointers to find the middle element of the linked list
 
+linkedList9.java : Count occurences of a number in the linked list
