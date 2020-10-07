@@ -29,18 +29,26 @@ public class linkedList7 {
 
         ref  = llObject.head;
         ans = llObject.head;
-
-        for (int i=1; i<position; i++){
-            ref = ref.next;
+        if (position> 0){
+            int i=1;
+            while(i<position && ref != null){
+                ref = ref.next;
+                i++;
+            }
+            if (ref ==null){
+                System.out.println("Position value is large than array length");
+            }
+            else{
+                while(ref.next!= null ){
+                    ref = ref.next;
+                    ans = ans.next;
+                }
+                System.out.println("\nPosition "+ position + " from the end of the list is : "+ ans.data);
+            }
         }
-
-        while(ref.next!= null){
-            ref = ref.next;
-            ans = ans.next;
+        else{
+            System.out.println("Invalid position entered");
         }
-
-
-        System.out.println("\nPosition "+ position + " from the end of the list is : "+ ans.data);
 
         System.out.println("\nProgram completed");
 

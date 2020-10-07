@@ -9,3 +9,5 @@ linkedList4.java : Length of linked list (Iteratively and Recursively)
 linkedList5.java : Search an element in a linked list(Iterative and Recursive)
 
 linkedList6.java : Find data at the nth node in a linked list
+
+linkedList67.java : Double Pointers in linked lists
