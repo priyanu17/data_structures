@@ -12,11 +12,26 @@ public class linkedList9 {
         while(temp!= null){
                 if (temp.data == valToCount) count++;
                 temp = temp.next;
-            }
+                }
             scan.close();
             System.out.println(valToCount + " occures "+ count + " times in the list.");
             return count;
     
+    }
+
+    public static int countOccurencesRec(LinkedList.Node temp, int valToCount){
+        
+        //base condition
+        if (temp == null){
+            
+            return 0;
+        }
+        if (temp.data == valToCount) 
+        return 1 + (countOccurencesRec(temp.next, valToCount));
+
+        return countOccurencesRec(temp.next, valToCount);
+
+
     }
     public static void main(String ar []){
 
@@ -43,5 +58,11 @@ public class linkedList9 {
         int result = countOccurences(llObject, valToCount);
         System.out.println("Result is : " + result);
         scan.close();
+
+        System.out.println("\nRecursive Solution");
+        int resultRec = countOccurencesRec(llObject.head, valToCount);
+        System.out.println("Recursive result is : "+ resultRec);
+
+        System.out.println("Program completed");
     }
 }
