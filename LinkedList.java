@@ -211,6 +211,22 @@ public class LinkedList{
 
         return FindNthNodeRec(temp.next, n-1);
     }   
+
+    public static LinkedList reverseList(LinkedList llObject){
+        Node previous, current, successor;
+        previous = successor = null;
+        current = llObject.head;
+
+        while(current!= null){
+
+            successor = current.next;
+            current.next = previous;
+            previous = current;
+            current = successor;
+        }
+        llObject.head = previous;
+        return llObject;
+    }
 }//end of class
 
 
