@@ -10,4 +10,7 @@ linkedList5.java : Search an element in a linked list(Iterative and Recursive)
 
 linkedList6.java : Find data at the nth node in a linked list
 
-linkedList67.java : Double Pointers in linked lists
+linkedList7.java : Double Pointers in linked lists
+
+linkedList8.java : Double Pointers to find the middle element of the linked list
+
