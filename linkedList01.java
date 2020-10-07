@@ -1,6 +1,6 @@
 
 
-public class linkedList1 {
+public class linkedList01 {
     
 
     public static void main(String ar []){

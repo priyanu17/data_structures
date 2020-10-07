@@ -1,5 +1,5 @@
 
-public class linkedList2 {
+public class linkedList02 {
     public static void main(String ar []){
         System.out.println("\nCreate a manual linked list in java");
         System.out.println("Traverse through the linked list");

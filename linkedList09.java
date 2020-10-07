@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class linkedList9 {
+public class linkedList09 {
 
     public static int countOccurences(LinkedList llObject, int valToCount){
 

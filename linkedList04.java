@@ -1,10 +1,12 @@
 
+
 import java.util.Scanner;
 
-public class linkedList5 {
+public class linkedList04 {
     public static void main(String ar []){
 
-        System.out.println("\nSearch an element if it exists in a linked list");
+        System.out.println("\nFind length of Linked List");
+        System.out.println("Iterative and Recursive");
 
         LinkedList llObject = new LinkedList();
 
@@ -31,14 +33,23 @@ public class linkedList5 {
         System.out.println("\nThe list elements");
         llObject.printList();
 
+        int lengthOfListItr = LinkedList.findLengthIterative(llObject);
+        System.out.println("\nLength of list Iteratively : " + lengthOfListItr);
+
+        int lengthOfListRec = llObject.findLengthRecursive(llObject.head);
+        System.out.println("Length of list Iteratively : " + lengthOfListRec);
+
+        System.out.println("\nInsert a new element");
         Scanner scan = new Scanner(System.in);
-        System.out.println("\nEnter a value to search in the Linked List");
-        int valueToSearch = scan.nextInt();
+        int element = scan.nextInt();
+        llObject.insertAtEnd(element);
+
+        lengthOfListItr = LinkedList.findLengthIterative(llObject);
+        System.out.println("\nLength of list Iteratively : " + lengthOfListItr);
+
+        lengthOfListRec = llObject.findLengthRecursive(llObject.head);
+        System.out.println("Length of list Iteratively : " + lengthOfListRec);
 
         scan.close();
-        System.out.println("\nIterative Result : " + llObject.searchValueItr(valueToSearch));
-
-        System.out.println("\nRecursive Result : " + llObject.searchValueRec(llObject.head, valueToSearch));
-        
-    }
+    }   
 }

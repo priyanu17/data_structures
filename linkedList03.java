@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-public class linkedList3 {
+public class linkedList03 {
     public static void main(String ar []){
 
 

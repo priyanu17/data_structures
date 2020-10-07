@@ -1,4 +1,4 @@
-public class linkedList8 {
+public class linkedList08 {
 
     public static int middleNode(LinkedList llObject){
 

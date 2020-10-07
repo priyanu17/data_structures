@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class linkedList7 {
+public class linkedList07 {
     public static void main(String ar[]){
         //create a linked list
 

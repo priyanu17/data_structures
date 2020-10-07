@@ -1,9 +1,10 @@
 
 import java.util.Scanner;
 
-public class linkedList6 {
-    public static void main(String ar [] ){
-        System.out.println("\n Find data at the nth node in a linked list");
+public class linkedList05 {
+    public static void main(String ar []){
+
+        System.out.println("\nSearch an element if it exists in a linked list");
 
         LinkedList llObject = new LinkedList();
 
@@ -17,7 +18,6 @@ public class linkedList6 {
         LinkedList.Node n7 = new LinkedList.Node(77);
         LinkedList.Node n8 = new LinkedList.Node(88);
 
-        
         //link nodes
         llObject.head = n1;
         n1.next = n2;
@@ -32,17 +32,13 @@ public class linkedList6 {
         llObject.printList();
 
         Scanner scan = new Scanner(System.in);
-        System.out.println("Enter node value");
-        int nthNodeItr = scan.nextInt();   
-        int nodeValueItr = llObject.FindNthNodeItr(nthNodeItr);
-        System.out.println("Nth node value (Iterative) is : " + nodeValueItr);
-        
-
-        System.out.println("Enter node value");
-        int nthNodeRec = scan.nextInt();   
-        int nodeValueRec = llObject.FindNthNodeRec(llObject.head, nthNodeRec);
-        System.out.println("Nth node value (Recursive) is : " + nodeValueRec);
+        System.out.println("\nEnter a value to search in the Linked List");
+        int valueToSearch = scan.nextInt();
 
         scan.close();
-    }   
+        System.out.println("\nIterative Result : " + llObject.searchValueItr(valueToSearch));
+
+        System.out.println("\nRecursive Result : " + llObject.searchValueRec(llObject.head, valueToSearch));
+        
+    }
 }
