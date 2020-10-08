@@ -3,7 +3,6 @@ package DoublyLinkedLists;
 public class dll01 {
     public static void main(String args [] ){
         System.out.println("\nCreate and traverse a manual Dll");
-        System.out.println("Changes added");
 
         //create dll object
         DLL dllObject = new DLL();
