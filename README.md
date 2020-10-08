@@ -7,4 +7,6 @@ Linked Lists, Doubly Linked Lists
 
 Refer:
 
+linkedLists.md
 
+doublyLinkedLists.md
