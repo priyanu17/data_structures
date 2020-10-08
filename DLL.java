@@ -158,6 +158,18 @@ public class DLL {
         nextNode.prev = prevNode;
         prevNode.next = nextNode;
     }
+    public void traverseInReverseOrder(){
+        Node temp = head;
+
+        while(temp.next!= null) temp = temp.next;
+        System.out.println("Dll traverse in reverse order");
+        while(temp!= null){
+            System.out.print(temp.data + "  ");
+            temp = temp.prev;
+        }
+        System.out.println();
+    }
+
 }//end of class
 
 
