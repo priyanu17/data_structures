@@ -1,7 +1,7 @@
 public class linkedList14 {
     public static void main(String args [] ){
 
-        System.out.println("\nReverse list using Recursion in One variable\n");
+        System.out.println("\nReverse list using Recursion (In One variable)\n");
 
         //create linked list object
         LinkedList llObject = new LinkedList();

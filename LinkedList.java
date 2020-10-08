@@ -271,28 +271,7 @@ public class LinkedList{
             return;
         }
         reverseListUsingRecOneVariable(node.next);
-        Node temp = node.next;
-        temp.next = node;
+        node.next.next = node;
         node.next = null;
     }
 }//end of class
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
