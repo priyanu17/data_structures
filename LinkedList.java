@@ -228,7 +228,60 @@ public class LinkedList{
 
         return llObject;
     }
+
+    public void printListRec(Node node){
+        
+        //base condition
+        if(node==null)
+        {
+            System.out.println("\nList Traversal using recursion successful");
+            return;
+        }
+        System.out.print(node.data + "  ");
+        printListRec(node.next);
+    }
+
+    public void printReverseListUsingRecursion(Node node){
+        //base condition
+        if(node == null){
+            System.out.println("\nReverse list print successful");
+            return;
+        }
+        printReverseListUsingRecursion(node.next);
+        System.out.print(node.data + "  ");
+    }
+
+    public void reverseListUsingRecursion(Node previous, Node current, Node successor){
+
+        if(current == null && successor == null){
+            head = previous;
+            return;
+        }
+
+        successor = current.next;
+        current.next = previous;
+        previous = current;
+        current = successor;
+        reverseListUsingRecursion( previous, current, successor);
+
+    }
 }//end of class
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -17,3 +17,10 @@ linkedList8.java : Double Pointers to find the middle element of the linked list
 linkedList9.java : Count occurences of a number in the linked list
 
 linkedList10.java : Reverse a linked list
+
+linkedList11.java : Print linked list using recursion
+
+linkedList12.java : Print reverse list using recursion
+
+linkedList13.java : Reverse linked list using recursion
+
