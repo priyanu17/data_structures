@@ -265,6 +265,16 @@ public class LinkedList{
         reverseListUsingRecursion( previous, current, successor);
 
     }
+    public void reverseListUsingRecOneVariable(Node node){
+        if (node.next== null){
+            head = node;
+            return;
+        }
+        reverseListUsingRecOneVariable(node.next);
+        Node temp = node.next;
+        temp.next = node;
+        node.next = null;
+    }
 }//end of class
 
 
