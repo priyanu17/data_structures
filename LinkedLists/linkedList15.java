@@ -36,9 +36,12 @@ public class linkedList15 {
         llObject.printList();
 
         Scanner scan = new Scanner(System.in);
+        System.out.println("\nEnter Kth position to swap :");
         int Kthposition = scan.nextInt();
         llObject.swapKthFrontWithEnd(Kthposition);
 
+        System.out.println("\nList after Swap is complete\n");
+        llObject.printList();
         scan.close();
 
     }

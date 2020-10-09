@@ -298,20 +298,60 @@ public class LinkedList{
         }
         reverseListUsingRecOneVariable(node.next);
         node.next.next = node;
-        node.next = null;
+        node.next = null; 
     }
 
-    public void swapKthFrontWithEnd(int position){
+    public void swapKthFrontWithEnd(int k){
+        Node frontNode, endNode;
+        Node prevFront, prevEnd;
+        
+        int l = findLengthIterative(this);
 
-        //pointers to track
-        Node prevNodeFront, frontNode, nextNodeFront;
-        Node prevNodeEnd, endNode, nextNodeEnd;
+        if(k<1 || k>l) {
+            System.out.println("Invalid value of K");
+            return;
+        }
 
-        //initialize pointers
-        prevNodeFront = prevNodeEnd = nextNodeFront = nextNodeEnd = null;
-        frontNode = endNode = this.head;
-        System.out.println(prevNodeFront);
-        //double pointers to be used
+        if(( (2*k)- 1) == l) return;
 
+        int i, j;
+        i= j = 1;
+
+        frontNode = endNode = head;
+        prevFront = prevEnd = null;
+        while(i<k){
+            prevFront = frontNode;
+            frontNode = frontNode.next;
+            i++;
+        }
+
+        while(j< (l-k+1)){
+            prevEnd = endNode;
+            endNode = endNode.next;
+            j++;
+        }
+
+        //actual swapping
+        if(prevFront!= null) prevFront.next = endNode;
+        if(prevEnd!= null)prevEnd.next = frontNode;
+
+        Node temp = frontNode.next;
+        frontNode.next = endNode.next;
+        endNode.next = temp;
+
+        if(k == 1) head = endNode;
+        if(k == l) head = frontNode;
     }
 }//end of class
+
+
+
+
+
+
+
+
+
+
+
+
