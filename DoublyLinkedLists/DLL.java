@@ -172,4 +172,17 @@ public class DLL {
         System.out.println();
     }
 
+    public void reverseDll(){
+        if (head == null || head.next == null) return;
+        Node current = this.head;
+        Node prevNode = null;
+        while(current!= null){
+            prevNode = current.prev;
+            current.prev = current.next;
+            current.next = prevNode;
+            current = current.prev;
+        }
+        head = prevNode.prev; 
+    }
+
 }//end of class
