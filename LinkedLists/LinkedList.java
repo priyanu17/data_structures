@@ -212,6 +212,32 @@ public class LinkedList{
         return FindNthNodeRec(temp.next, n-1);
     }   
 
+    public Node NthNodeFromEnd(int position){
+        Node ref, ans;
+        ref  = this.head;
+        ans = this.head;
+        if (position> 0){
+            int i=1;
+            while(i<position && ref != null){
+                ref = ref.next;
+                i++;
+            }
+            if (ref ==null){
+                System.out.println("Position value is large than array length");
+            }
+            else{
+                while(ref.next!= null ){
+                    ref = ref.next;
+                    ans = ans.next;
+                }
+            }
+        }
+        else{
+            System.out.println("Invalid position entered");
+        }
+        return ans;
+    }
+
     public static LinkedList reverseList(LinkedList llObject){
 
         Node previous, current, successor;
@@ -273,5 +299,19 @@ public class LinkedList{
         reverseListUsingRecOneVariable(node.next);
         node.next.next = node;
         node.next = null;
+    }
+
+    public void swapKthFrontWithEnd(int position){
+
+        //pointers to track
+        Node prevNodeFront, frontNode, nextNodeFront;
+        Node prevNodeEnd, endNode, nextNodeEnd;
+
+        //initialize pointers
+        prevNodeFront = prevNodeEnd = nextNodeFront = nextNodeEnd = null;
+        frontNode = endNode = this.head;
+        System.out.println(prevNodeFront);
+        //double pointers to be used
+
     }
 }//end of class

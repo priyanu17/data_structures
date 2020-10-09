@@ -172,6 +172,7 @@ public class DLL {
         System.out.println();
     }
 
+    //reversing by swapping pointers
     public void reverseDll(){
         if (head == null || head.next == null) return;
         Node current = this.head;
@@ -185,4 +186,13 @@ public class DLL {
         head = prevNode.prev; 
     }
 
+    
 }//end of class
+
+
+
+
+
+
+
+

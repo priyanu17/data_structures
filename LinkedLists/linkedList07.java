@@ -22,35 +22,15 @@ public class linkedList07 {
         llObject.printList();
 
         //using Double Pointers
-        LinkedList.Node ref, ans ;
 
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter position from end of list");
         int position = scan.nextInt();
         scan.close();
 
-        ref  = llObject.head;
-        ans = llObject.head;
-        if (position> 0){
-            int i=1;
-            while(i<position && ref != null){
-                ref = ref.next;
-                i++;
-            }
-            if (ref ==null){
-                System.out.println("Position value is large than array length");
-            }
-            else{
-                while(ref.next!= null ){
-                    ref = ref.next;
-                    ans = ans.next;
-                }
-                System.out.println("\nPosition "+ position + " from the end of the list is : "+ ans.data);
-            }
-        }
-        else{
-            System.out.println("Invalid position entered");
-        }
+        LinkedList.Node nthNodeFromEnd = llObject.NthNodeFromEnd(position); 
+
+        System.out.println("\nPosition "+ position + " from the end of the list is : "+ nthNodeFromEnd.data);
 
         System.out.println("\nProgram completed");
 
