@@ -186,6 +186,62 @@ public class DLL {
         head = prevNode.prev; 
     }
 
+    public void deleteNode(Node current){
+        if(current == head){
+            head = head.next;
+            head.prev = null;
+            return;
+        }
+
+        if(current.prev != null) current.prev.next = current.next;
+        if(current.next != null) current.next.prev = current.prev;
+
+        current = null;
+    }
+    public void deleteElement(int elementToDelete){
+
+        if(this.head == null)return;
+
+        Node current = this.head;        
+        while(current!= null){
+            if(current.data == elementToDelete) {
+                Node nextNode = current.next;
+                deleteNode(current);
+                current = nextNode;
+            }
+            else current = current.next;
+        }
+    }
+
+    public void deleteElementRec(Node temp, int key){
+        Node nextNode = temp.next;
+
+        if(head == null )
+        return;
+
+        if(head.next== null && head.data == key)
+        {
+            head = null;
+            return;
+        }
+        //base condition
+        if(temp.next == null && temp.data == key && temp.prev != null){
+            temp.prev.next = null;
+            temp = null;
+            return;
+        }
+
+        if(temp.data == key && temp == this.head ){
+            head = temp.next;
+            head.prev = null;
+            temp = nextNode;
+        }
+
+
+
+
+
+    }
     
 }//end of class
 
