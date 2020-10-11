@@ -55,7 +55,7 @@ public class StackStatic {
             for(int i=0; i<=top;i++){
                 System.out.print(ar[i] + "  ");
             }
-            System.out.println("\n");
+            System.out.println("");
         }
         else System.out.println("Stack Underflow");
     }

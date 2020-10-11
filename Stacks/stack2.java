@@ -3,7 +3,7 @@ package Stacks;
 public class stack2 {
     public static void main(String args []){
 
-        System.out.println("\n Checking stack overflow and underflow with push operation\n");
+        System.out.println("\n Checking stack overflow with push operation\n");
 
         //create stack object
         StackStatic stackObject = new StackStatic();
