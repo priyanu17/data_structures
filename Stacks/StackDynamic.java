@@ -13,22 +13,57 @@ public class StackDynamic{
             this.next = null;
         }
     }
-
-    public void push(){
-
+    public void push(int val){
+        StackNode newNode = new StackNode(val);
+        if(root == null){
+            root = newNode;
+            return;
+        }
+        newNode.next = root;
+        root = newNode;
     }
     public int pop(){
-
+        if(root == null){
+            System.out.println("Stack underflow ");
+            return Integer.MIN_VALUE;
+        }
+        int val = root.data;
+        root = root.next;
+        return val;
     }
     public boolean isEmpty(){
-
+        if (root == null) return true;
+        else return false;
     }
 
     public int peek(){
-
+        if(root == null) {
+            System.out.println("Stack is empty");
+            return Integer.MIN_VALUE;
+        }
+        else return root.data;
     }
 
     public void printStack(){
 
+        if(root == null){
+            System.out.println("Stack is empty");
+            return;
+        }
+
+        System.out.println("Stack from top to bottom --> ");
+        StackNode temp = root;
+        while(temp!= null){
+            System.out.print(temp.data + "  ");
+            temp = temp.next;
+        }
+        System.out.println();
     }
 }//end of class
+
+
+
+
+
+
+
