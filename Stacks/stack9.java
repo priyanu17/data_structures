@@ -5,7 +5,7 @@ import java.util.*;
 public class stack9 {
     public static void main(String args [] ){
 
-        System.out.println("\nReverse a string and linked list using stack\n");
+        System.out.println("\nReverse a string using stack\n");
 
         Scanner scan = new Scanner(System.in);
 
