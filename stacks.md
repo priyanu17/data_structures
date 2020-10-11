@@ -10,7 +10,7 @@ stack3.java : Stack underflow with pop operations (using arrays)
 
 stack4.java : Fetch top element of stack (using array)
 
-stack5.java : 
+stack5.java : Create and implement dynamic stack using linked list
 
 stack6.java :
 
