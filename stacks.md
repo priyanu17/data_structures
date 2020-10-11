@@ -18,6 +18,6 @@ stack7.java : View stack after multiple pop operations
 
 stack8.java : Reverse a stack using recursion and standard stack operations
 
-stack9.java :
+stack9.java : Reverse a string or linked list using stack
 
 stack10.java :

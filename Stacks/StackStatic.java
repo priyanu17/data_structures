@@ -12,8 +12,7 @@ public class StackStatic {
 
     public void push(int value){
         if(top<(MAX-1)){
-            top++;
-            ar[top] = value;
+            ar[++top] = value;
         }
         else {
             System.out.println("Stack overflow");
