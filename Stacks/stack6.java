@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class stack6 {
     public static void main(String[] args) {
-        System.out.println("\nView stack after each push operation\n");
+        System.out.println("\nView stack after multiple push operation\n");
 
         
         //create stack object

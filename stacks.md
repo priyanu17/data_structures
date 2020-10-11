@@ -12,11 +12,11 @@ stack4.java : Fetch top element of stack (using array)
 
 stack5.java : Create and implement dynamic stack using linked list
 
-stack6.java :
+stack6.java : View stack after multiple push operation
 
-stack7.java :
+stack7.java : View stack after multiple pop operations
 
-stack8.java :
+stack8.java : Reverse a stack using recursion and standard stack operations
 
 stack9.java :
 
