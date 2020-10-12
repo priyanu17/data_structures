@@ -20,4 +20,4 @@ stack8.java : Reverse a stack using recursion and standard stack operations
 
 stack9.java : Reverse a string using stack
 
-stack10.java :
+stack10.java : Reverse a linked list using stack
