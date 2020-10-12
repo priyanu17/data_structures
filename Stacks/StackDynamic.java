@@ -82,7 +82,38 @@ public class StackDynamic{
         reverseStack(stackOb);
         stackOb.insertAtBottom(stackOb, val);
     }
+
+    public void insertAtCorrect(StackDynamic stackOb, int value){
+
+        //base condition
+        if(stackOb.root == null){
+            stackOb.push(value);
+            return;
+        }
+
+        int valMid = stackOb.peek();
+        if(valMid< value){
+            stackOb.pop();
+            insertAtCorrect(stackOb, value);
+            stackOb.push(valMid);
+        }
+        else{
+           stackOb.push(value); 
+        }
+    }
+
+    public static void sortStack(StackDynamic stackOb){
+
+        //base condition
+        if(stackOb.root == null) return;
+
+        int val = stackOb.pop();
+        sortStack(stackOb);
+        stackOb.insertAtCorrect(stackOb, val);
+
+    }
 }//end of class
+
 
 
 
