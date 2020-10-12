@@ -67,10 +67,14 @@ public class LinkedList{
 
     }
 
-    public void deleteFromHead(){
+    public int deleteFromHead(){
+        int val = 0;
         if (head!= null){
+             val = head.data;
             head = head.next;
         }
+        return val;
+        
     }
     public void deleteAfterNode(Node prev){
         if(prev!= null)

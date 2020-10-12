@@ -59,6 +59,17 @@ public class StackDynamic{
         }
         System.out.println();
     }
+
+    public void reverseStack(StackDynamic stackOb){
+        
+        if(stackOb.root == null){
+            return;
+        }
+
+        int val = stackOb.pop();
+        reverseStack(stackOb);
+        stackOb.push(val);
+    }
 }//end of class
 
 
