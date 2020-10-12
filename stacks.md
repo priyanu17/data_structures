@@ -22,4 +22,12 @@ stack09.java : Reverse a string using stack
 
 stack10.java : Reverse a linked list using stack
 
-stack11.java
+stack11.java : Sort a stack using ADT stack functions
+
+stack12.java : Sort a stack using temporary stack
+
+stack13.java : Delete middle element of stack 
+
+stack14.java : Sort an array using stack
+
+stack15.java : check if array is stack sortable
