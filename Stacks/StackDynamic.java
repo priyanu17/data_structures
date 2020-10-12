@@ -37,11 +37,11 @@ public class StackDynamic{
     }
 
     public int peek(){
-        if(root == null) {
+        if(this.root == null) {
             System.out.println("Stack is empty");
             return Integer.MIN_VALUE;
         }
-        else return root.data;
+        else return this.root.data;
     }
 
     public void printStack(){

@@ -22,6 +22,7 @@ public class stack15 {
             array[i] = value;
             i++;
         }
+        scan.close();
 
         System.out.println("\nDisplay array");
         for(int element : array){
@@ -39,6 +40,5 @@ public class stack15 {
         }
 
         System.out.print("\nIs array Stack sortable ?\nAnswer : "+ ans);
-        scan.close();
     }
 }   

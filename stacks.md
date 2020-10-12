@@ -31,3 +31,7 @@ stack13.java : Delete middle element of stack
 stack14.java : Sort an array using stack
 
 stack15.java : check if array is stack sortable
+
+stack16.java : check for balanced parenthesis
+
+stack17.java : 
