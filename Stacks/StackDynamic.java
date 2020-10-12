@@ -111,9 +111,18 @@ public class StackDynamic{
 
     }
 
-    public void sortStackUsingTempStack(){
+    public static StackDynamic sortStackUsingTempStack(StackDynamic stackOb, StackDynamic newStack){
 
+        //base condition
+        if(stackOb.isEmpty()) return newStack;
 
+        int valOldTop= stackOb.pop();
+        if(newStack.isEmpty() || valOldTop >= newStack.peek()) newStack.push(valOldTop);
+        else {
+            newStack.insertAtCorrect(newStack, valOldTop);
+        }
+        sortStackUsingTempStack(stackOb, newStack);
+        return newStack;
     }
 }//end of class
 

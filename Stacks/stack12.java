@@ -2,11 +2,11 @@ package Stacks;
 
 import java.util.Scanner;
 
-public class stack11 {
+public class stack12 {
     public static void main(String args [] ){
-        
 
-        System.out.println("\nSort a stack using ADT stack functions\n");
+
+        System.out.println("\nSort a stack using temporary stack\n");
 
         //create stack object
         StackDynamic stackObject = new StackDynamic();
@@ -25,13 +25,15 @@ public class stack11 {
         }
         scan.close();
 
-        System.out.println("\nDisplay stack before sorting");
+        System.out.println("\nDisplay stack before sorting (using temp stack)");
         stackObject.printStack();
 
+        //create new temp stak to pass
+        StackDynamic tempStack = new StackDynamic();
         //sort the stack
-        StackDynamic.sortStack(stackObject);
+        stackObject = StackDynamic.sortStackUsingTempStack(stackObject, tempStack);
 
-        System.out.println("\nDisplay stack after sorting");
+        System.out.println("\nDisplay stack after sorting (using temp stack)");
         stackObject.printStack();
     }
 }
