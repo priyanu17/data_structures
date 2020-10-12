@@ -124,6 +124,19 @@ public class StackDynamic{
         sortStackUsingTempStack(stackOb, newStack);
         return newStack;
     }
+
+ 
+    public static void deleteMiddleElement(StackDynamic stackOb, StackNode middleNode, StackNode endNode){
+
+        if(endNode.next == null || endNode.next.next == null) {
+            stackOb.pop();
+            return;
+        }
+        int val = middleNode.data;
+        stackOb.pop();
+        deleteMiddleElement(stackOb, middleNode.next, endNode.next.next);
+        stackOb.push(val);
+    }
 }//end of class
 
 
