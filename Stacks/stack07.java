@@ -2,7 +2,7 @@ package Stacks;
 
 import java.util.Scanner;
 
-public class stack7 {
+public class stack07 {
     public static void main(String[] args) {
         
         System.out.println("\nView stack after multiple pop operations\n");

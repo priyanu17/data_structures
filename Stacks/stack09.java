@@ -2,7 +2,7 @@ package Stacks;
 
 import java.util.*;
 
-public class stack9 {
+public class stack09 {
     public static void main(String args [] ){
 
         System.out.println("\nReverse a string using stack\n");

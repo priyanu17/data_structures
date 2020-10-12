@@ -1,6 +1,6 @@
 package Stacks;
 
-public class stack2 {
+public class stack02 {
     public static void main(String args []){
 
         System.out.println("\nChecking stack overflow with push operation\n");

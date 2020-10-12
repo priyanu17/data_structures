@@ -1,6 +1,6 @@
 package Stacks;
 
-public class stack5 {
+public class stack05 {
     public static void main(String args [] ){
 
         System.out.println("\nCreate and implement dynamic stack using linked list\n");

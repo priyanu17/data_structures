@@ -1,6 +1,6 @@
 package Stacks;
 
-public class stack3 {
+public class stack03 {
     public static void main(String args [] ){
 
         System.out.println("\nStack underflow with pop operations\n");

@@ -1,6 +1,6 @@
 package Stacks;
 
-public class stack1 {
+public class stack01 {
     public static void main(String args []){
 
         System.out.println("\nPush and pop operations on stacks using arrays\n");

@@ -2,7 +2,7 @@ package Stacks;
 
 import java.util.Scanner;
 
-public class stack6 {
+public class stack06 {
     public static void main(String[] args) {
         System.out.println("\nView stack after multiple push operation\n");
 

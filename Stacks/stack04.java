@@ -1,6 +1,6 @@
 package Stacks;
 
-public class stack4 {
+public class stack04 {
     public static void main(String args [] ){
 
         System.out.println("\nFetch top element of stack\n");
