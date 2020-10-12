@@ -85,17 +85,15 @@ public class StackDynamic{
 
     public void insertAtCorrect(StackDynamic stackOb, int value){
 
-        //base condition
-        if(stackOb.root == null){
+        if(stackOb.isEmpty()){
             stackOb.push(value);
             return;
         }
-
-        int valMid = stackOb.peek();
-        if(valMid< value){
+        if( stackOb.peek()> value ){
+            int valTop = stackOb.peek();
             stackOb.pop();
             insertAtCorrect(stackOb, value);
-            stackOb.push(valMid);
+            stackOb.push(valTop);
         }
         else{
            stackOb.push(value); 
@@ -110,6 +108,11 @@ public class StackDynamic{
         int val = stackOb.pop();
         sortStack(stackOb);
         stackOb.insertAtCorrect(stackOb, val);
+
+    }
+
+    public void sortStackUsingTempStack(){
+
 
     }
 }//end of class
