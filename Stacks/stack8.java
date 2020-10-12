@@ -1,7 +1,7 @@
 package Stacks;
 
 public class stack8 {
-    public static void main(String args){
+    public static void main(String args [] ){
 
         System.out.println("\nReverse a stack using recursion and standard stack operations\n");
 
@@ -19,8 +19,10 @@ public class stack8 {
         System.out.println("\nTraverse the stack");
         stackObject.printStack();
 
-        
+        StackDynamic.reverseStack(stackObject);
 
+        System.out.println("\nTraverse the stack");
+        stackObject.printStack();
 
     }
 }

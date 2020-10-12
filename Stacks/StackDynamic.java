@@ -60,7 +60,19 @@ public class StackDynamic{
         System.out.println();
     }
 
-    public void reverseStack(StackDynamic stackOb){
+    public void insertAtBottom(StackDynamic stackOb, int value){
+
+        if(stackOb.root == null){
+            stackOb.push(value);
+            return;
+        }
+        
+        int valMid = stackOb.pop();
+        insertAtBottom(stackOb, value);
+        stackOb.push(valMid);
+    }
+
+    public static void reverseStack(StackDynamic stackOb){
         
         if(stackOb.root == null){
             return;
@@ -68,7 +80,7 @@ public class StackDynamic{
 
         int val = stackOb.pop();
         reverseStack(stackOb);
-        stackOb.push(val);
+        stackOb.insertAtBottom(stackOb, val);
     }
 }//end of class
 
