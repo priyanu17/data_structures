@@ -1,6 +1,7 @@
 package Stacks;
 
 import LinkedLists.LinkedList;
+import java.util.Scanner;
 
 public class stack10 {
     public static void main(String args [] ){
@@ -10,13 +11,17 @@ public class stack10 {
         //create a linked list object
         LinkedLists.LinkedList llObject = new LinkedLists.LinkedList();
 
-        llObject.insertAtEnd(1);
-        llObject.insertAtEnd(2);
-        llObject.insertAtEnd(3);
-        llObject.insertAtEnd(4);
-        llObject.insertAtEnd(5);
-        llObject.insertAtEnd(6);
+        Scanner scan = new Scanner(System.in);
+        
+        System.out.println("Enter length of linked list");
+        int lengthOfLL = scan.nextInt();
 
+        System.out.println("Enter " + lengthOfLL + " elements to insert into linked list");
+        for(int k=0; k<lengthOfLL; k++ ){
+            int val = scan.nextInt();
+            llObject.insertAtEnd(val);
+        }
+        scan.close();
         System.out.println("LL before reversal");
         llObject.printList();
 
@@ -30,7 +35,7 @@ public class stack10 {
             stackObj.push(llObject.deleteFromHead());
         }
 
-        System.out.println("Length of Linked List after all push " + LinkedList.findLengthIterative(llObject));
+        System.out.println("\nLength of Linked List after all push : " + LinkedList.findLengthIterative(llObject));
 
         for(int j=0; j<lengthOfList; j++){
             llObject.insertAtEnd(stackObj.pop());
