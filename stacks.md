@@ -39,3 +39,7 @@ stack16.java : check for balanced parenthesis
 stack17.java : Infix to Postfix conversion using stack
 
 stack18.java : Infix to Postfix conversion using stack
+
+stack19.java : Postfix to Infix conversion using stack
+
+stack20.java : Prefix to Infix conversion using stack
