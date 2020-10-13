@@ -24,21 +24,15 @@ public class stack17 {
 
             //closing parenthesis
             else if (s == ')'){ 
-                while(!sO.isEmpty() && sO.peek() != '('){
-                    ans += sO.pop();
-                }
+                while(!sO.isEmpty() && sO.peek() != '(') ans += sO.pop();
                 sO.pop();
             }
             else if(s == '}'){
-                while(!sO.isEmpty() && sO.peek() != '{'){
-                    ans += sO.pop();
-                }
+                while(!sO.isEmpty() && sO.peek() != '{') ans += sO.pop();
                 sO.pop();
             }
             else if(s == ']'){
-                while(!sO.isEmpty() && sO.peek() != '['){
-                    ans += sO.pop();
-                }
+                while(!sO.isEmpty() && sO.peek() != '[') ans += sO.pop();
                 sO.pop();
             }
             //operator
