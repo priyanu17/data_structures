@@ -34,7 +34,7 @@ stack15.java : check if array is stack sortable
 
 stack16.java : check for balanced parenthesis
 
-// JAVA UTIL STACK
+// JAVA UTIL STACK (Standard stack problem)
 
 stack17.java : Infix to Postfix conversion using stack
 
@@ -43,3 +43,11 @@ stack18.java : Infix to Postfix conversion using stack
 stack19.java : Postfix to Infix conversion using stack
 
 stack20.java : Prefix to Infix conversion using stack
+
+stack21.java : Postfix to Prefix conversion using stack
+
+stack22.java : Prefix to Postfix conversion using stack
+
+//Other problems
+
+stack23.java : The Stock Span problem

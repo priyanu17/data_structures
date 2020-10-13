@@ -22,7 +22,7 @@ public class stack22 {
             //operator
             else{
                 String o1 = sO.pop();
-                String o2 = sO.pop();
+                String o2  = sO.pop();
                 String toPush = o1 + o2 + s;
                 sO.push(toPush);
             }
