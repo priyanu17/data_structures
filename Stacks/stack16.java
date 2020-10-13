@@ -3,8 +3,6 @@ package Stacks;
 import java.util.Scanner;
 public class stack16 {
     public static void main(String ars [] ){
-
-
         System.out.println("\nCheck for balanced parenthesis in string expressions\n");
 
         //get String input
@@ -29,7 +27,10 @@ public class stack16 {
             else if(sO.peek() == 40 && n == 41) sO.pop();
             else if(sO.peek() == 91 && n == 93) sO.pop();
             else if(sO.peek() == 123 && n == 125) sO.pop();
-            else sO.push(n);
+            else {
+                sO.push(n);
+                break;
+            }
         }
         System.out.println("****");
 
