@@ -34,4 +34,8 @@ stack15.java : check if array is stack sortable
 
 stack16.java : check for balanced parenthesis
 
-stack17.java : 
+// JAVA UTIL STACK
+
+stack17.java : Infix to Postfix conversion using stack
+
+stack18.java : Infix to Postfix conversion using stack
