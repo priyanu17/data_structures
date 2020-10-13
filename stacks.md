@@ -51,3 +51,7 @@ stack22.java : Prefix to Postfix conversion using stack
 //Other problems
 
 stack23.java : The Stock Span problem
+
+stack24.java : Check for balanced parenthesis 
+
+stack25.java : 
