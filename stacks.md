@@ -48,7 +48,7 @@ stack21.java : Postfix to Prefix conversion using stack
 
 stack22.java : Prefix to Postfix conversion using stack
 
-//Other problems
+// Other problems (Standard Problems)
 
 stack23.java : The Stock Span problem
 
@@ -59,3 +59,7 @@ stack25.java : Find the next greater element for each element in an array
 stack26.java : Find the number of Next Greater Elements for each element in an array
 (refer Q.25)
 
+// Misc Questions on stacks
+stack27.java : Reverse a String using stacks (from util)
+
+stack28.java : Find maximum depth of a nested parethesis using stacks
