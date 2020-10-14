@@ -1,12 +1,16 @@
 # data_structures
 Data structures and algorithms practice solutions
 
-### Current Data Structure
+###  Data Structures being covered
 
-Linked Lists, Doubly Linked Lists
+Linked Lists, Doubly Linked Lists, Stacks, Arrays
 
 Refer:
 
 linkedLists.md
 
 doublyLinkedLists.md
+
+stacks.md
+
+arrays.md
