@@ -2,35 +2,40 @@ package Stacks;
 
 import java.util.Stack;
 
-public class stack28 {
+public class stack29 {
 
     public static int findMaximumDepth(String input){
 
         Stack<String> stack = new Stack<String>();
         int finalCount = 0;
         int count = 0;
-        for(String s : input.split("")){
-            
-            //opening parenthesis
-            if(s.equals("(")) {
-                stack.push(s);
-                count = 0;
+        String [] sArr = input.split("");
+        for(int i=0; i< sArr.length ; i++){
+           if(sArr[i].equals("(")) {
+               stack.push(sArr[i]);
+                count++;
             }
-            //closing parenthesis
-            else if(s.equals(")")) {
-                if(!stack.isEmpty() && stack.peek().equals("(")) count ++;
+            else if(sArr[i].equals(")")) {
+
+                if(!stack.isEmpty() && stack.peek().equals("(")) {
+                    stack.pop();
+                    count--;
+                }
                 else return -1;
             }
-            //other input
-            else continue;
+            else 
+            continue;
+
             if(count > finalCount) finalCount = count;
+
         }
-        return finalCount;
+        if(stack.isEmpty()) return finalCount;
+        else return -1;
     }
     public static void main(String args [] ){
 
 
-        System.out.println("\nFind maximum depth of a nested parethesis using stacks (Method 1)\n");
+        System.out.println("\nFind maximum depth of a nested parethesis using stacks (Method 2)\n");
         String inputString;
 
         inputString = "( ((X)) (((Y))) )";

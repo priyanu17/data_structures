@@ -62,4 +62,6 @@ stack26.java : Find the number of Next Greater Elements for each element in an a
 // Misc Questions on stacks
 stack27.java : Reverse a String using stacks (from util)
 
-stack28.java : Find maximum depth of a nested parethesis using stacks
+stack28.java : Find maximum depth of a nested parethesis using stacks(Method 1)
+
+stack29.java : Find maximum depth of a nested parethesis using stacks(Method 2)
