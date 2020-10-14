@@ -65,3 +65,5 @@ stack27.java : Reverse a String using stacks (from util)
 stack28.java : Find maximum depth of a nested parethesis using stacks(Method 1)
 
 stack29.java : Find maximum depth of a nested parethesis using stacks(Method 2)
+
+stack30.java : Find the length of the longest valid substring using stacks
