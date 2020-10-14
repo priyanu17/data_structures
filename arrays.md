@@ -1,19 +1,7 @@
 array01.java : Rotate an array by d elements
 
-array02.java : 
+array02.java : Rotate an array clockwise using the Reversal Algorithm for array rotation
 
-array03.java : 
+array03.java : Rotate an array clockwise by  one position
 
-array04.java : 
 
-array05.java : 
-
-array06.java : 
-
-array07.java : 
-
-array08.java : 
-
-array09.java : 
-
-array10.java : 
