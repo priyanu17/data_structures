@@ -67,3 +67,7 @@ stack28.java : Find maximum depth of a nested parethesis using stacks(Method 1)
 stack29.java : Find maximum depth of a nested parethesis using stacks(Method 2)
 
 stack30.java : Find the length of the longest valid substring using stacks
+
+stack31.java : Number of bracket reversals needed for balanced expression
+
+stack32.java : Identify and mark unmatched parenthesis using stacks
