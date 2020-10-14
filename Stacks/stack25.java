@@ -10,7 +10,7 @@ public class stack25{
         Stack<Integer> sO = new Stack<Integer>();
         for(int i=ar.length-1; i>=0; i--){
 
-            while(!sO.isEmpty() && sO.peek() < ar[i]) sO.pop();
+            while(!sO.isEmpty() && sO.peek() <= ar[i]) sO.pop();
 
             if(sO.isEmpty()) result[i] = -1;
             else result[i] = sO.peek();

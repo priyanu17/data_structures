@@ -55,3 +55,7 @@ stack23.java : The Stock Span problem
 stack24.java : Check for balanced parenthesis 
 
 stack25.java : Find the next greater element for each element in an array
+
+stack26.java : Find the number of Next Greater Elements for each element in an array
+(refer Q.25)
+
