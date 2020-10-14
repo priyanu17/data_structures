@@ -2,53 +2,52 @@ package Stacks;
 
 import java.util.Stack;
 
-public class stack25 {
+public class stack25{
 
-    public static int [] findNextGreaterElement(int ar [] ){
+    public static int []  findNextGreaterElement(int ar [] ){
+
+        int result [] = new int[ar.length];
         Stack<Integer> sO = new Stack<Integer>();
+        for(int i=ar.length-1; i>=0; i--){
 
-        int resultArray [] = new int[ar.length];
-        for(int i=(ar.length-1); i>=0; i--){
             while(!sO.isEmpty() && sO.peek() < ar[i]) sO.pop();
 
-            if(sO.isEmpty()) resultArray[i] = -1;
-            else 
-            resultArray[i] = sO.peek();
+            if(sO.isEmpty()) result[i] = -1;
+            else result[i] = sO.peek();
 
             sO.push(ar[i]);
         }
-        return resultArray;
-
+        return result;
     }
-    public static void main(String srga [] ){
 
-        System.out.println("\nFind the next greater element for each element in an array\n");
+    public static void main(String args []){
 
-        int arr [] = { 11, 13, 21, 3 };
+        System.out.println("\nFind the next greater element in an array using stacks\n");
 
-        int resultArray [] = findNextGreaterElement(arr);
-
-        for(int i=0; i<arr.length; i++){
-            System.out.println(arr[i] + "----> " + resultArray[i]);
+        int arr [] = {10, 20, 30, 40, 50, 60, 70};
+        int resultArray  [] = findNextGreaterElement(arr );
+        System.out.print("Arr :  ");
+        for (int element : arr){
+            System.out.print(element + "  ");
         }
         System.out.println();
-        int arr2 [] = { 4, 5, 2, 25 };
-
-        int resultArray2 [] = findNextGreaterElement(arr2);
-
-        for(int i=0; i<arr2.length; i++){
-            System.out.println(arr2[i] + "----> " + resultArray2[i]);
+        System.out.print("NGE :  ");
+        for (int element : resultArray){
+            System.out.print(element + "  ");
         }
         System.out.println();
+    }
 
-        int arr3 [] = { 13, 7, 6, 12 };
-
-        int resultArray3 [] = findNextGreaterElement(arr3);
-
-        for(int i=0; i<arr3.length; i++){
-            System.out.println(arr3[i] + "----> " + resultArray3[i]);
-        }
-        System.out.println();
-
-    }   
 }
+
+
+
+
+
+
+
+
+
+
+
+
