@@ -1,22 +1,36 @@
 package Stacks;
+import java.util.Stack;
 
 public class stack33 {
-    public static void main(String args [] ){
 
-
-
-        String s = "anupriya";
-        for(int i=0; i<s.length(); i++){
-            if(s.charAt(i) == 'a'){
-            System.out.println("i is : " + i);
-            String s1 = s.substring(0, i);
-            String s2 = "*";
-            String s3 = s.substring(i+1);
-            s = s1 + s2 + s3;
-            System.out.println("s is : " + s);
-            }
+    public static int stackMax(Stack<Integer> stack){
+        //function not needed
+        int max = Integer.MIN_VALUE;
+        while(stack!= null){
         }
-        System.out.println(s);
-        System.out.println("Done");
+        return max;
     }
+    public static void main(String args []){
+
+        System.out.println("\nFind the maximum element of a stack without distorting it\n");
+
+        Stack<Integer> stack = new Stack<Integer>();
+
+        stack.push(9);
+        stack.push(8);
+        stack.push(7);
+        stack.push(6);
+        stack.push(5);
+
+        System.out.println("Print stack from bottom to top -->");
+        for(int e : stack) System.out.print(e + "  ");
+        System.out.println();
+
+        int max = Integer.MIN_VALUE;
+        for (int e : stack){
+            if(e > max) max = e;
+        }
+        System.out.println("Max is : " + max);
+        
+    }   
 }

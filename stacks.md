@@ -71,3 +71,5 @@ stack30.java : Find the length of the longest valid substring using stacks
 stack31.java : Number of bracket reversals needed for balanced expression
 
 stack32.java : Identify and mark unmatched parenthesis using stacks
+
+stack33.java : Find maximum element of a stack without distorting it
