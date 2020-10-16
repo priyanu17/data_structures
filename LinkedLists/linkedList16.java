@@ -55,21 +55,20 @@ public class linkedList16 {
         LinkedList ll1 = new LinkedList();
 
         ll1.insertAtEnd(1);
+        ll1.insertAtEnd(2);
         ll1.insertAtEnd(3);
-        ll1.insertAtEnd(5);
-        ll1.insertAtEnd(7);
 
         LinkedList ll2 = new LinkedList();
 
-        ll2.insertAtEnd(2);
-        ll2.insertAtEnd(2);
-        ll2.insertAtEnd(2);
+        ll2.insertAtEnd(3);
         ll2.insertAtEnd(4);
-        ll2.insertAtEnd(6);
-        ll2.insertAtEnd(8);
-        ll2.insertAtEnd(8);
-        ll2.insertAtEnd(8);
-        ll2.insertAtEnd(8);
+        // ll2.insertAtEnd(2);
+        // ll2.insertAtEnd(4);
+        // ll2.insertAtEnd(6);
+        // ll2.insertAtEnd(8);
+        // ll2.insertAtEnd(8);
+        // ll2.insertAtEnd(8);
+        // ll2.insertAtEnd(8);
 
         //display linked lists
         System.out.println("Display list 1");
@@ -82,6 +81,30 @@ public class linkedList16 {
         //display merged lists
         System.out.println("Display merged list");
         mergeList.printList();
+
+        LinkedList ll3 = new LinkedList();
+
+        ll3.insertAtEnd(4);
+        ll3.insertAtEnd(5);
+        ll3.insertAtEnd(6);
+
+        LinkedList ll4 = new LinkedList();
+
+        ll4.insertAtEnd(1);
+        ll4.insertAtEnd(2);
+        ll4.insertAtEnd(10);
+
+        //display linked lists
+        System.out.println("Display list 1");
+        ll3.printList();
+        System.out.println("Display list 2");
+        ll4.printList();
+
+        LinkedList mergeList2 = mergeLists(ll3, ll4);
+
+        //display merged lists
+        System.out.println("Display merged list");
+        mergeList2.printList();
 
     }
 }
