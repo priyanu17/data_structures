@@ -9,4 +9,3 @@ queue02.java : Traverse a static queue
 queue03.java : Create and implement a dynamic queue
 
 queue04.java : Traverse a dynamic queue
-

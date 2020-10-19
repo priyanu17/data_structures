@@ -4,7 +4,7 @@ public class queueDynamic {
     
     queueNode front;
     queueNode rear;
-    
+
     public static class queueNode{
         int data;
         queueNode next;
@@ -34,10 +34,13 @@ public class queueDynamic {
 
     public int deQueue(){
 
-        if(this.front == null ) return Integer.MIN_VALUE;
+        if(this.front == null ) {
+            return Integer.MIN_VALUE;
+        }
 
         int item = this.front.data;
         front = front.next;
+        if(front == null) this.rear = null;
         return item;
     }
 
