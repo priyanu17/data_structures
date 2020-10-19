@@ -57,10 +57,14 @@ public class queueStatic {
 
     public void printQueue(){
 
-        if(!this.isEmpty() && this.front < this.rear)
+        if(!this.isEmpty() && this.front < this.rear){
+            System.out.println("Queue from front to rear -->");
             for(int i=front; i<=rear; i++) System.out.print(array[i] + "  ");
+            System.out.println();
+        }
 
         else if(!this.isEmpty() && this.front > this.rear){
+            System.out.println("Queue from front to rear -->");
             for(int i=front; i<this.capacity; i++) System.out.print(array[i] + "  ");
             for(int i=0; i<=rear ; i++) System.out.print(array[i] + "  ");
         }
