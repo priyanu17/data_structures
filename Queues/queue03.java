@@ -7,7 +7,6 @@ public class queue03 {
 
         queueDynamic queueObject = new queueDynamic();
 
-
         queueObject.enQueue(11);
         queueObject.enQueue(22);
         queueObject.enQueue(33);
