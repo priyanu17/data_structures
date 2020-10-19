@@ -2,6 +2,9 @@ package Queues;
 
 public class queueDynamic {
     
+    queueNode front;
+    queueNode rear;
+    
     public static class queueNode{
         int data;
         queueNode next;
@@ -12,8 +15,6 @@ public class queueDynamic {
         }
     }
 
-    queueNode front;
-    queueNode rear;
     public boolean isEmpty(){
         return (this.front == null && this.rear == null) ;
     }
@@ -38,6 +39,15 @@ public class queueDynamic {
         int item = this.front.data;
         front = front.next;
         return item;
+    }
+
+    public int front(){
+        if(this.front == null) return Integer.MIN_VALUE;
+        return front.data;
+    }
+    public int rear(){
+        if (this.rear == null ) return Integer.MIN_VALUE;
+        return rear.data;
     }
 
     public void printQueue(){
