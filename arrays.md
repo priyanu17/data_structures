@@ -3,3 +3,7 @@ array01.java : Rotate an array by d elements
 array02.java : Rotate an array clockwise using the Reversal Algorithm for array rotation
 
 array03.java : Rotate an array clockwise by  one position
+
+array04.java : Find GCD of an array of numbers
+
+array05.java : Find LCM of an array of numbers
