@@ -9,3 +9,5 @@ array04.java : Find GCD of an array of numbers
 array05.java : Find LCM of an array of numbers
 
 array06.java : Reverse an array
+
+array07.java : Find the maximum and minimum element in an array
