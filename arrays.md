@@ -7,3 +7,5 @@ array03.java : Rotate an array clockwise by  one position
 array04.java : Find GCD of an array of numbers
 
 array05.java : Find LCM of an array of numbers
+
+array06.java : Reverse an array
