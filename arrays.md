@@ -11,3 +11,5 @@ array05.java : Find LCM of an array of numbers
 array06.java : Reverse an array
 
 array07.java : Find the maximum and minimum element in an array
+
+array08.java : Find the Kth max and min element of the array

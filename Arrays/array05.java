@@ -21,7 +21,7 @@ public class array05 {
 
         System.out.println("\nLCM of an array\n");
 
-        int array [] = {20, 40, 60, 80};
+        int array [] = {2, 4};
         System.out.println("LCM is : " + lcmOfArray(array));
 
     }
